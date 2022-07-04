@@ -1,0 +1,92 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    background-color:  #00adad ;
+    }
+    
+    .topbar {
+        font-family: 'Courier New', Courier, monospace;
+      width: 100%;
+      background-color: #22031F ;
+      overflow: auto;
+      padding: none;
+    }
+    
+    .topbar a{
+      float: left;
+      text-align: center;
+      padding: 14px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: auto;
+    }
+    
+    .topbar a:hover{
+      background-color:  #FAF33E;
+      color: #000000;
+    }
+    .active{
+      background-color: #00adad;
+    }
+    #login{
+      float: right ;
+    }
+
+    
+.container{
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+   
+}
+    input{
+      border-radius: 50px;
+        width: 60%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background-color: rgb(175, 206, 236);
+    }
+    input:focus{ 
+        background-color: #fafafa;
+    }
+    button {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(255, 62, 62);
+        color: rgb(255, 255, 255);
+        padding: 15px 9px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+        opacity: 0.9;
+      }
+      button:hover {
+        background-color: rgb(255, 178, 62);
+        color: black;
+      }
+form{
+    align-items: right;
+}
+    select{
+        border-radius: 50px;
+        width: 64%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background-color: rgb(175, 206, 236);
+    }
+    select:focus{
+        background-color: #fafafa;
+    }
+table,th{
+  border-radius: 100px;
+  margin-top: 20px;
+  background-color: #ffffff;
+   margin-left : 200px;
+    align-items: center;
+    width: 80%;
+}

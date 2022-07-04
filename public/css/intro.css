@@ -1,0 +1,65 @@
+body{
+font-family: 'Courier New', Courier, monospace;
+margin: auto;
+background-color: #00adad;
+}
+ 
+.topbar {
+  width: 100%;
+  background-color: #22031F ;
+  overflow: auto;
+  padding: none;
+}
+
+.topbar a{
+  float: left;
+  text-align: center;
+  padding: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topbar a:hover{
+  background-color:  #FAF33E;
+  color: #000000;
+}
+.active{
+  background-color: #00adad;
+}
+#login{
+  float: right ;
+}
+
+.head{
+  top: 45px;
+  background-image: url("../photos/original.jpg");
+  text-align: center;
+  padding: 10%;
+ 
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(107, 103, 139);
+  font-variant: small-caps;
+  font-size: larger;
+}
+.link{
+  text-align: center;
+  padding: 4%;
+}
+.link a{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  
+}
+.link a:hover{
+  background-color: rgb(255, 213, 0);
+  color: #000000;
+}

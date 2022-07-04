@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>
+      Medical Seats
+    </title>
+    <link rel="stylesheet" href="css/uni.css">
+    <script src="https://kit.fontawesome.com/8e2a0400de.js" crossorigin="anonymous"></script>
+    
+          <div class="bar">
+            <a  href="/"><i class="fas fa-book"></i>  EduDB</a>
+            <a  href="home.html"><i class="fas fa-home"></i>Home </a>
+            <a  href="12"><i class="fas fa-school"></i> 11th & 12th</a>
+            <a   href="./uni"><i class="fas fa-graduation-cap"></i> Colleges</a>
+            <a id="login" href="login"><i class="far fa-user"></i> Login</a>
+              <a href="/search"><i class="fas fa-search"></i> Search</a>
+            <a  href="/engseats">Enginnering Seats</a>
+            <a class="active" href="/medseats">Medical Seats</a>
+            </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <body>
+      <table  style="margin-right: 20%;margin-left: 20%;width: 70%;"class="table table-hover">
+            <tr>
+                <th>College Name</th>
+                <th>MBBS</th>
+                <th>MD</th>
+                <th>BPT</th>
+            </tr>
+            
+                <% data.forEach(function(item){ %>
+                <tr>
+                    <td><%= item.clgname %></td>        
+                    <td><%= item.mbbs  %></td>
+                    <td><%= item.md  %></td>
+                    <td><%= item.bpt %></td>                   
+                  
+                </tr>           
+               
+            <% }) %>           
+        </table>
+    </body>
+</html>

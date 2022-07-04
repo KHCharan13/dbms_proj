@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sign Up
+        </title><link rel="stylesheet" href="css/login.css">
+        <script src="https://kit.fontawesome.com/8e2a0400de.js" crossorigin="anonymous"></script>
+        <div class="topbar">
+            <a  href="index.html"><i class="fas fa-book"></i>  EduDB</a>
+            <a href="home.html"><i class="fas fa-home"></i>Home </a>
+            <a href="/12"><i class="fas fa-school"></i> 11th & 12th</a>
+            <a href="/uni"><i class="fas fa-graduation-cap"></i> Colleges</a>
+            <a class="active" id="login" href="/login"><i class="far fa-user"></i> Login</a>
+            <a href="/search"><i class="fas fa-plus"></i> Search</a>
+        </div>
+    </head>
+    </head>
+    <body>
+
+        <form action="/signup" method="POST">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Enter the Details to sign up</p>
+               
+                <label for="userid"><b>User id</b></label>
+                <br>
+                <input type="text" placeholder="Enter User id" id="userid" name="userid" required>
+                <br>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter your Email" id="email" name="email" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <br>
+                <input type="password" placeholder="Enter new password " id="psw" name="psw" required>
+                <br>
+                <label for="repsw"><b>Repeat the password</b></label>
+                <br>
+                <input type="password" placeholder="Re-enter your password" id="repsw" name="repsw" required>
+                <br>
+                <% if(data1 === 0){ %>
+                    <p>passwords are incorrect</p>
+                <% } %>
+                <% if(data1 === 1){ %>
+                    <p>User id is aldready taken choose another</p>
+                <% } %>
+                <br>
+                <div class="Buttons">
+                    <br>
+                    <a class="button" href="/login">Cancel</a>
+
+                    <button type="submit" class="button">Sign Up</button>
+                    
+
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

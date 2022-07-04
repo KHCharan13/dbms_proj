@@ -1,0 +1,63 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    background-color: #ffffff;
+    }
+    .bar {
+      width: 100%;
+      background-color: #22031F ;
+      overflow: auto;
+      padding: none;
+    }
+    
+    .bar a{
+      float: left;
+      text-align: center;
+      padding: 14px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: auto;
+    }
+    
+    .bar a:hover{
+      background-color:  #FAF33E;
+      color: #000000;
+    }
+    .active{
+      background-color: #00adad;
+    }
+    #login{
+      float: right ;
+    }
+    .side {
+        height: 100%;
+        width: 142px;
+        position: fixed;
+        z-index: 1;
+        top: 45px;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        padding-top: 20px;
+      }
+      
+      .side a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        color: #e7c0c0;
+        display: block;
+      }
+      
+      .side a:hover {
+        color: #ff0000;
+        background-color: #ffffff;
+      }
+      
+      .content {
+        top: 45px;
+        margin-left: 160px; /* Same as the width of the side */
+        font-size: 20px; /* Increased text to enable scrolling */
+       background-color: #ffffff;
+       color: #000;
+      }
+      
+    

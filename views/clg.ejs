@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>
+      11th and 12th
+    </title>
+    <link rel="stylesheet" href="css/clg.css">
+    <script src="https://kit.fontawesome.com/8e2a0400de.js" crossorigin="anonymous"></script>
+    
+          <div class="bar">
+            <a  href="/"><i class="fas fa-book"></i>  EduDB</a>
+            <a  href="home.html"><i class="fas fa-home"></i>Home </a>
+            <a  class="active" href="12"><i class="fas fa-school"></i> 11th & 12th</a>
+            <a   href="./uni"><i class="fas fa-graduation-cap"></i> Colleges</a>
+            <a id="login" href="login"><i class="far fa-user"></i> Login</a>
+              <a  href="/search"><i class="fas fa-search"></i> Search</a>
+            <a  href="/engseats">Enginnering Seats</a>
+            <a  href="/medseats">Medical Seats</a>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+       
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'PCMB')" id="defaultOpen">PCMB</button>
+    <button class="tablinks" onclick="openCity(event, 'PCMC')">PCMC</button>
+    <button class="tablinks" onclick="openCity(event, 'PCME')">PCME</button>
+  </div>
+  
+  <div id="PCMB" class="tabcontent" class="container mt-3">
+    <h3>PCMB</h3>
+    <p> is a group of course one is able to select after finishing their 10th.
+    This group offers the following subjects.
+      <li>Physics</li>
+      <li>Chemistry</li>
+      <li>Mathematics</li>
+      <li>Biology</li><br>
+    This group helps one to take up both Enginnering as well as Medical Examinations all over India
+    Since most of the Enginnering exams have Physics,Chemistry and Mathematics and Medical Exams 
+    as they consistes of Biology instead of Mathematics so this is the best choice for students who 
+    cannot make a decision between Enginnering and Medical after they finish their Board Exams. <br>
+    Below are Some of the Colleges which offer such courses <br>
+       </p>
+    <table class="table table-hover">
+        <tr>
+            <th>College Name</th>
+            <th>Location</th>
+            <th>Website</th>
+            
+            <th>Type of College</th>
+            <th></th>
+        </tr>
+            <% data.forEach(function(item){ %>
+            <% if(item.branch === "PCMB"){ %>
+            <tr>
+            <td><%= item.clgname  %></td>
+            <td><%= item.location  %></td>
+            <td><a href="<%= item.website  %>"><%= item.website  %></a></td>
+              <td><%= item.typeofclg  %></td>
+            </tr>            
+        <% }}) %>           
+    </table>
+    <br><br>
+    </div>
+  
+  <div id="PCMC" class="tabcontent">
+    <h3>PCMC</h3>
+    <p>PCMC is a group of course one is able to select after finishing their 10th.
+      This group offers the following subjects.
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Mathematics</li>
+        <li>Computer Science</li><br>
+      This group helps one to take up Enginnering as well other exams which are mentioned below all over India
+      Since most of the Enginnering exams have Physics,Chemistry and Mathematics 
+      as they consistes of Biology instead of Mathematics so they cannot write Medical related exams as they will not have much idea 
+      of Biology 
+      <br>
+      Hence since this specializes in the subjects that are realted towards Comuter Science Enginnering the students intrested in Computer Science Engineering can Choose this feild
+      </p>
+      <table class="table table-hover">
+        <tr>
+            <th>College Name</th>
+            <th>Location</th>
+            <th>Website</th>
+            
+            <th>Type of College</th>
+            <th></th>
+        </tr>
+            <% data.forEach(function(item){ %>
+            <% if(item.branch === "PCMC"){ %>
+            <tr>
+            <td><%= item.clgname  %></td>
+            <td><%= item.location  %></td>
+            <td><a href="<%= item.website  %>"><%= item.website  %></a></td>
+              <td><%= item.typeofclg  %></td>
+            </tr>            
+        <% }}) %>           
+    </table>
+   
+  </div>
+  
+  <div id="PCME" class="tabcontent">
+    <h3>PCME</h3>
+    <p> PCME is a group of course one is able to select after finishing their 10th.
+    This group offers the following subjects.
+      <li>Physics</li>
+      <li>Chemistry</li>
+      <li>Mathematics</li>
+      <li>Electrical</li><br>
+    
+   
+      This group helps one to take up Enginnering as well other exams which are mentioned below all over India
+      Since most of the Enginnering exams have Physics,Chemistry and Mathematics 
+      as they consistes of Biology instead of Mathematics so they cannot write Medical related exams as they will not have much idea 
+      of Biology 
+      <br>
+      Hence since this specializes in the subjects that are realted towards Comuter Science Enginnering the students intrested in Electrical or Electronincs Engineering can Choose this feild
+    </p>
+    <table class="table table-hover">
+      <tr>
+          <th>College Name</th>
+          <th>Location</th>
+          <th>Website</th>
+          
+          <th>Type of College</th>
+          <th></th>
+      </tr>
+          <% data.forEach(function(item){ %>
+          <% if(item.branch === "PCME"){ %>
+          <tr>
+          <td><%= item.clgname  %></td>
+          <td><%= item.location  %></td>
+          <td><a href="<%= item.website  %>"><%= item.website  %></a></td>
+            <td><%= item.typeofclg  %></td>
+          </tr>            
+      <% }}) %>           
+  </table>
+  </div>
+  
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+    </body>
+  
+</html>

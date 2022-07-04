@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>
+      Home
+    </title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/8e2a0400de.js" crossorigin="anonymous"></script>
+
+    <body>
+  
+      <div class="topbar">
+        <a  href="/"><i class="fas fa-book"></i>  EduDB</a>
+            <a class="active" href="home.html"><i class="fas fa-home"></i>Home </a>
+            <a   href="12"><i class="fas fa-school"></i> 11th & 12th</a>
+            <a   href="./uni"><i class="fas fa-graduation-cap"></i> Colleges</a>
+            <a id="login" href="login"><i class="far fa-user"></i> Login</a>
+              <a  href="/search"><i class="fas fa-search"></i> Search</a>
+            <a  href="/engseats">Enginnering Seats</a>
+            <a  href="/medseats">Medical Seats</a>
+    </div>
+    <div class="info">
+         <h1>EduDB</h1>
+         <br>
+         <p>Welcome to EduDB. This website is a database different educational choices one can take up.
+           This website shows the choices for one about what to take up after one has finished their 10th and 12th and the various
+            options one can choose for their education.Here one can find the different choices one can take up and the colleges offering
+             that particular course. This process helps the person to find the Course/Path They want to continue.</p>
+            </div>
+
+
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                
+                <img src="./photos/national-institute-of-engineering-nie-mysore-fee-structure.jpg" style="width:100%; border-radius: 50px;">
+                <div class="text">NIE Mysore,Karnataka</div>
+              </div>
+              
+              <div class="mySlides fade">
+                
+                <img src="./photos/IIT-Madras-launches-free-online-courses-on-Artificial-Intelligence.jpg" style="width:100%; border-radius: 50px;">
+                <div class="text">IIT Madras,Tamil Nadu</div>
+              </div>
+              
+              <div class="mySlides fade">
+            
+                <img src="./photos/aiims.jpg" style="width:100%; border-radius: 50px;">
+                <div class="text">AIIMS Delhi</div>
+              </div>
+
+              <div class="mySlides fade">
+            
+                <img src="./photos/banner-2.jpg" style="width:100%; border-radius: 50px;">
+                <div class="text">IIT Bombay,Maharastra</div>
+              </div>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+              </div>
+
+              <div class="info">
+                
+                
+                <p>The Above SlideShow shows some of the Colleges in India. This Website allows one to check the colleges that one can enter based on their cutoffs
+                  this helps one to analyze the choices. They can even search colleges based on location and name so they can go to the colleges near their locality and check if they have the required quaification.
+                  The Links are provided in the description of the Colleges from which one can contact or go through the colleges webiste they wish and get more information regarding the colleges.
+                <br>
+                So in Short this is the website one can easily find the career choice of their choice with the help of differnt feilds and other options 
+                </p>
+                   </div>
+       
+
+
+    </body>
+    
+  </head>
+  <script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); 
+}
+  </script>
+</html>

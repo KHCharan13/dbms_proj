@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>
+      Colleges
+    </title>
+    
+    <link rel="stylesheet" href="css/uni.css">
+    <script src="https://kit.fontawesome.com/8e2a0400de.js" crossorigin="anonymous"></script>
+    
+          <div class="bar">
+            <a  href="/"><i class="fas fa-book"></i>  EduDB</a>
+            <a  href="home.html"><i class="fas fa-home"></i>Home </a>
+            <a   href="12"><i class="fas fa-school"></i> 11th & 12th</a>
+            <a  class="active" href="./uni"><i class="fas fa-graduation-cap"></i> Colleges</a>
+            <a id="login" href="login"><i class="far fa-user"></i> Login</a>
+              <a  href="/search"><i class="fas fa-search"></i> Search</a>
+            <a  href="/engseats">Enginnering Seats</a>
+            <a  href="/medseats">Medical Seats</a>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+     <body>
+       <div class="everything">
+        <div class="tab">
+        <button class="tablinks" onclick="openBRANCH(event, 'ENGINNERING')" id="defaultOpen">ENGINNERING</button>
+        <button class="tablinks" onclick="openBRANCH(event, 'MEDICAL')">MEDICAL</button>
+        <button class="tablinks" onclick="openBRANCH(event, 'FINE ARTS')">ARTS COMMERCE SCIENCE</button>
+        <button class="tablinks" onclick="openBRANCH(event, 'LAW')">LAW</button>
+      
+      </div>
+      
+      <div id="ENGINNERING" class="tabcontent">
+        <h3>ENGINNERING</h3>
+        <br>
+        <p>Engineering Generally a 4 years course 
+            A degree in an engineering or technology-related subject is usually necessary to work in this sector  though <br> a few engineers have qualifications in disciplines such as 
+            maths, physics or computer science. Students of non-engineering subjects may be required <br> to complete a 
+             conversion course or professional qualification before working in the field.For some roles, a qualification in any engineering discipline<br>  
+            may be acceptable. For others, such as those in chemical, electrical or mechanical engineering, employers usually require a specific degree.
+           </p>
+           <br>
+        <button class="accordion">Compter Science Engineering </button>
+            <div class="panel">
+        <table class="table table-hover">
+            <tr>
+                <th>College Name</th>
+                <th>Location</th>
+                <th>Cutoff</th>
+                <th>Website</th>
+                <th>Cutoff Based On</th>
+            </tr>
+                <% data.forEach(function(item){ %>
+                <% if(item.branch === "ENGINNERING"){ %>
+                <% if(item.course === "CSE"){%>
+                <tr>
+                    <td><%= item.uniname %></td>
+                    <td><%= item.uniloc  %></td>
+                    <td><%= item.cutoff  %></td>
+                    <td> <a href="<%= item.website %>"><%= item.website %></a> </td>
+                    <td><%= item.examtype %></td>
+                </tr>           
+               
+            <% }}}) %>           
+        </table>
+        </div>
+        <button class="accordion">Electronincs and Comumication Engineering</button>
+        <div class="panel">
+    <table class="table table-hover">
+        <tr>
+            <th>College Name</th>
+            <th>Location</th>
+            <th>Cutoff</th>
+            <th>Website</th>
+            <th>Cutoff Based On</th>
+        </tr>
+            <% data.forEach(function(item){ %>
+            <% if(item.branch === "ENGINNERING"){ %>
+            <% if(item.course === "ECE"){%>
+            <tr>
+                <td><%= item.uniname %></td>
+                <td><%= item.uniloc  %></td>
+                <td><%= item.cutoff  %></td>
+                <td> <a href="<%= item.website %>"><%= item.website %></a> </td>
+                <td><%= item.examtype %></td>
+            </tr>           
+           
+        <% }}}) %>           
+    </table>
+    </div>
+    <button class="accordion">Electrical Electronics Engineering</button>
+    <div class="panel">
+<table class="table table-hover">
+    <tr>
+        <th>College Name</th>
+        <th>Location</th>
+        <th>Cutoff</th>
+        <th>Website</th>
+        <th>Cutoff Based On</th>
+    </tr>
+        <% data.forEach(function(item){ %>
+        <% if(item.branch === "ENGINNERING"){ %>
+        <% if(item.course === "EEE"){%>
+        <tr>
+            <td><%= item.uniname %></td>
+            <td><%= item.uniloc  %></td>
+            <td><%= item.cutoff  %></td>
+            <td> <a href="<%= item.website %>"><%= item.website %></a> </td>
+            <td><%= item.examtype %></td>
+        </tr>           
+       
+    <% }}}) %>           
+</table>
+</div>
+<button class="accordion">Mechanical Engineering</button>
+<div class="panel">
+<table class="table table-hover">
+<tr>
+    <th>College Name</th>
+    <th>Location</th>
+    <th>Cutoff</th>
+    <th>Website</th>
+    <th>Cutoff Based On</th>
+</tr>
+    <% data.forEach(function(item){ %>
+    <% if(item.branch === "ENGINNERING"){ %>
+    <% if(item.course === "MECH"){%>
+    <tr>
+        <td><%= item.uniname %></td>
+        <td><%= item.uniloc  %></td>
+        <td><%= item.cutoff  %></td>
+        <td> <a href="<%= item.website %>"><%= item.website %></a> </td>
+        <td><%= item.examtype %></td>
+    </tr>           
+   
+<% }}}) %>           
+</table>
+</div>
+<button class="accordion">Information Science Engineering</button>
+<div class="panel">
+  
+<table class="table table-hover">
+<tr>
+    <th>College Name</th>
+    <th>Location</th>
+    <th>Cutoff</th>
+    <th>Website</th>
+    <th>Cutoff Based On</th>
+</tr>
+    <% data.forEach(function(item){ %>
+    <% if(item.branch === "ENGINNERING"){ %>
+    <% if(item.course === "ISE"){%>
+    <tr>
+        <td><%= item.uniname %></td>
+        <td><%= item.uniloc  %></td>
+        <td><%= item.cutoff  %></td>
+        <td> <a href="<%= item.website %>"><%= item.website %></a> </td>
+        <td><%= item.examtype %></td>
+    </tr>           
+   
+<% }}}) %>           
+</table>
+</div>
+
+<button class="accordion">Civil Engineering</button>
+  <div class="panel">
+<table class="table table-hover">
+  <tr>
+      <th>College Name</th>
+      <th>Location</th>
+      <th>Cutoff</th>
+      <th>Website</th>
+      <th>Cutoff Based On</th>
+  </tr>
+      <% data.forEach(function(item){ %>
+      <% if(item.branch === "ENGINNERING"){ %>
+      <% if(item.course === "CIVIL"){%>
+      <tr>
+          <td><%= item.uniname %></td>
+          <td><%= item.uniloc  %></td>
+          <td><%= item.cutoff  %></td>
+          <td> <a href="<%= item.website %>"><%= item.website %></a> </td>
+          <td><%= item.examtype %></td>
+      </tr>           
+     
+  <% }}}) %>           
+</table>
+</div>
+        </div>
+      
+        <div id="MEDICAL" class="tabcontent">
+          <h3>MEDICAL</h3>
+          <p>Medicine courses are offered in various specialisations including Medical and Biomedical Sciences, Pharmacy, Allied Health, Nursing, Health, and Fitness. A course in Medicine and Health Sciences requires students to learn and abide by the Hippocratic Oath for ethical conduct which says, that as a medical practitioner a person needs to practice arts and science of medicine honestly in all aspects i.e. patient care, teaching and research. Students holding a degree in Medical and Health science will get career opportunities in hospitals, and private clinics in the healthcare sector. A Medical and Health Science graduate can also work with research centres, laboratories, and Pharmaceuticals Industry.
+
+            <br><br> The courses offered under Medical and Health Science are – MBBS, BDS, BPharm, BSc in Nursing, Public Health, Bachelor in Optometry, and more specialisations. To become successful in the Medical and Health Science field, one needs to specialise by pursuing post-graduation and research studies in medicine.
+            
+            As a service industry sector, healthcare is multifaceted. It encompasses sub-sectors such as hospitals, medical equipment, clinical procedures, telecommunication and IT for the medical field, medical tourism, and health insurance.</p>
+          <br>
+          <button class="accordion">College List</button>
+          <div class="panel">
+  <table class="table table-hover">
+      <tr>
+          <th>College Name</th>
+          <th>Location</th>
+          <th>Cutoff</th>
+          <th>Website</th>
+          <th>Cutoff Based On</th>
+      </tr>
+          <% data.forEach(function(item){ %>
+          <% if(item.branch === "MEDICAL"){ %>
+
+          <tr>
+              <td><%= item.uniname %></td>
+              <td><%= item.uniloc  %></td>
+              <td><%= item.cutoff  %></td>
+              <td> <a href="<%= item.website %>"><%= item.website %></a> </td>
+              <td><%= item.examtype %></td>
+          </tr>           
+         
+      <% }}) %>           
+  </table>
+  </div></div>
+  <div id="FINE ARTS"class="tabcontent">
+    <h3> Arts</h3>
+    <p> Fine arts is another branch where people genrally for those people who want to grow their carrer through their Hobbies
+        like 
+        <li>Dance & Choreography.</li>
+         <li>Photography.</li>          
+          <li>Painting and drawing.</li>
+          <li>Architecture.</li>
+           <li>  Sculpture.</li></p>
+    <h3>Commerce</h3>
+    <p>Commerce is a field for students who have an interest in financial information/transactions, trading of economic value, etc. Students often consider taking up Commerce after completing Class 12. Students who are looking forward to pursuing a career in Commerce have a wide range of choices before them.
+
+        Candidates can pursue the Commerce course at the undergraduate (UG), postgraduate (PG), diploma levels as well as at the doctoral level. UG level Commerce courses offered to aspirants include BCom, BBA, CA, CS, BBA LLB, BBM, BSc, etc. At the PG level, popular Commerce programs are MCom, MBA, MPhil, MSc, etc. Generally speaking, UG courses in Commerce are of three years duration whereas PG programmes are of two years duration.
+        
+        Among the Commerce courses, students can consider choosing specialisations such as Accounting and Finance, Banking and Finance, Accounting and Taxation, Actuarial Science, Business Administration, Applied Economics, E-Commerce, Financial Accounting, Banking and Insurance, Human Resources, Entrepreneurship, Accounting and Auditing, etc.</p>
+     
+    </p>
+    <h3>Science
+    </h3>
+    <p>Science is a multi-disciplined academic field for students with the following subject combinations in class 12th – PCM (Physics, Chemistry, Mathematics), PCB (Physics, Chemistry, Biology), and PCMB (Physics, Chemistry, Mathematics, Biology). Students looking forward to a career in Science have a wide range of options at both UG (undergraduate) and PG (postgraduate) levels. Students can choose to pursue courses such as BSc (Bachelor of Science), MSc (Master of Science) and PhD (Doctor of Philosophy) in a variety of Science branches</p>
+    <p> Some of the Colleges That offer the courses are as follows
+    <table class="table table-hover">
+        <tr>
+            <th>College Name</th>
+            <th>Location</th>
+            <th>Cutoff</th>
+            <th>Website</th>
+            <th>Cutoff Based On</th>
+        </tr>
+            <% data.forEach(function(item){ %>
+            <% if(item.branch === "ARTS"){ %>
+    
+            <tr>
+                <td><%= item.uniname %></td>
+                <td><%= item.uniloc  %></td>
+                <td><%= item.cutoff  %></td>
+                <td> <a href="<%= item.website %>"><%= item.website %></a> </td>
+                <td><%= item.examtype %></td>
+            </tr>           
+           
+        <% }}) %>           
+    </table>
+</div>
+
+<div id="LAW" class="tabcontent">
+    <h3>Law</h3>
+    <p>Law is a career stream that candidates pursue at undergraduate (UG), postgraduate (PG) or doctorate (PhD) level to practice the legal profession in India. <br> Law as a career is very popular among students in India. The popularity of this stream can be judged from the fact that famous people like  <br>Mahatma Gandhi, Nelson Mandela as well as the former US President Barack Obama were lawyers.
+Scope of law as a career is immense in India. <br> These days, law graduates do not just opt to get dressed in black and white apparels and head to court but also make their presence feel  <br> in corporate houses, law firms, law agencies, administrative services and the likes.
+<br><br>
+A career in law requires one to put in a lot of hard work and long working hours. The preferred specialisations in law are either criminal or civil. However, these days other branches are also gaining popularity such as cyber law, patent law as well as corporate law. 
+To make a career in law at the UG level, aspirants can pursue five-year duration integrated LLB courses such as BA LLB, BBA LLB, BSc LLB or BCom LLB. Candidates can also opt to pursue a three year LLB course after completing their graduation. Apart from this, candidates who wish to study further can obtain a master’s degree (LLM) followed by a doctoral degree (PhD).
+    </p>
+    <table class="table table-hover">
+        <tr>
+            <th>College Name</th>
+            <th>Location</th>
+            <th>Cutoff</th>
+            <th>Website</th>
+            <th>Cutoff Based On</th>
+        </tr>
+            <% data.forEach(function(item){ %>
+            <% if(item.branch === "LAW"){ %>
+    
+            <tr>
+                <td><%= item.uniname %></td>
+                <td><%= item.uniloc  %></td>
+                <td><%= item.cutoff  %></td>
+                <td> <a href="<%= item.website %>"><%= item.website %></a> </td>
+                <td><%= item.examtype %></td>
+            </tr>           
+           
+        <% }}) %>           
+    </table>
+</div>
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+
+        </script>
+        
+      
+      <script>
+      function openBRANCH(evt, BranchName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(BranchName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+    </body>
+</html>

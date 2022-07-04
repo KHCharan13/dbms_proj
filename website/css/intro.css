@@ -1,0 +1,59 @@
+body{
+font-family: 'Courier New', Courier, monospace;
+margin: auto;
+}
+
+.topbar {
+  width: 100%;
+  background-color: #22031F ;
+  overflow: auto;
+  padding: none;
+}
+
+.topbar a{
+  float: left;
+  text-align: center;
+  padding: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: auto;
+}
+
+.topbar a:hover{
+  background-color:  #FAF33E;
+  color: #000000;
+}
+.active{
+  background-color: #00adad;
+}
+#login{
+  float: right ;
+}
+
+.head{
+  background-image: url("photos\3.jpg");
+  background-color: #242736;
+  text-align: center;
+  padding: 10%;
+ 
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(107, 103, 139);
+  font-variant: small-caps;
+  font-size: larger;
+}
+.link{
+  text-align: center;
+  padding: 4%;
+}
+.link a{
+  text-decoration: none;
+  
+  padding: 10px;
+  background-color: greenyellow;
+  border-radius: 4px;
+  
+}
+.link a:hover{
+  background-color: rgb(85, 100, 62);
+  color: #CDDEFF;
+}

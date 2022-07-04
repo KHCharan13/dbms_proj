@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login
+        </title>
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        
+
+        <form action="/login" method="POST">
+            <div class="container">
+                <br>
+                <br><br>
+                <h1>Login Details</h1>
+                <p>Enter the Details to login</p>
+
+                <label for="userid"><b>User id</b></label>
+                <br>
+                <input type="text" placeholder="Enter User id" id='userid'name="userid" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <br>
+                <input type="password" placeholder="Enter new password " id="psw" name="psw" required>
+                <br>
+                <div class="Buttons">
+                    <br>
+                    <button type="submit" class="Login">Login</button>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="signup">
+            <p>If You don't have an account click on the signup button below</p>
+            <br>
+                    <a href="signup.html">Sign Up</a>
+                    <a class="cancel" href="intro.html">Cancel</a>
+        </div>
+        
+    </body>
+</html>

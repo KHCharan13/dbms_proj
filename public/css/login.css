@@ -1,0 +1,98 @@
+*{box-sizing: border-box}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #00adad;
+    margin: auto;
+}
+.topbar {
+    width: 100%;
+    background-color: #22031F ;
+    overflow: auto;
+    padding: none;
+  }
+  
+  .topbar a{
+    float: left;
+    text-align: center;
+    padding: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .topbar a:hover{
+    background-color:  #FAF33E;
+    color: #000000;
+  }
+  .active{
+    background-color: #00adad;
+  }
+  #login{
+    float: right ;
+  }
+.container {
+    text-align: center;
+    }
+form{
+    align-items: center;
+    color: #fafafa;
+}
+input{
+    width: 30%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background-color: rgb(175, 206, 236);
+    border-radius: 50px;
+}
+input:focus{
+    background-color: #fafafa;
+}
+button {
+    background-color: rgb(255, 62, 62);
+    color: rgb(255, 255, 255);
+    padding: 15px 9px;
+    margin: 6px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.9;
+    border-radius: 5%;
+  }
+  button:hover {
+    opacity:36;
+  }
+.signup{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.button
+{
+    background-color: rgb(255, 62, 62);
+    color: rgb(255, 255, 255);
+    padding: 13px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    opacity: 0.9;
+    border-radius: 5%;
+    text-decoration: none;
+}
+.button:hover{
+    opacity:36;
+}
+#showp{
+    background-color: #00adad;
+    color: rgb(255, 255, 255);
+    width: 0%;
+   border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5%;
+    text-decoration: none;
+}
+#showp:hover{
+  color: #22031F;
+}

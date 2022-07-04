@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sign Up
+        </title>
+        <link rel="stylesheet" href="css/signup.css">
+    </head>
+    <body>
+
+        <form action="/signup" method="POST">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Enter the Details to sign up</p>
+
+                <label for="userid"><b>User id</b></label>
+                <br>
+                <input type="text" placeholder="Enter User id" id="userid" name="userid" required>
+                <br>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter your Email" id="email" name="email" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <br>
+                <input type="password" placeholder="Enter new password " id="psw" name="psw" required>
+                <br>
+                <label for="repsw"><b>Repeat the password</b></label>
+                <br>
+                <input type="password" placeholder="Re-enter your password" id="repsw" name="repsw" required>
+                <br>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <br>
+                <div class="Buttons">
+                    <br>
+                    <a class="cancel" href="/login">Cancel</a>
+
+                    <button type="submit" class="signup">Sign Up</button>
+                    
+
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
